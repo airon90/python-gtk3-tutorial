@@ -72,7 +72,7 @@ class Assistant(Gtk.Assistant):
         Gtk.main_quit()
 
     def on_complete_toggled(self, checkbutton):
-        assistant.set_page_complete(self.complete, checkbutton.get_active())
+        self.set_page_complete(self.complete, checkbutton.get_active())
 
 assistant = Assistant()
 assistant.show_all()
